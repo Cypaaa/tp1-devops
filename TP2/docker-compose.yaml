@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  tp-myslq:
+    from: mysql:8.3.0
+    container_name: tp-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3306:3306
+    networks:
+      - network-mysql-phpmyadmin-bridge
+
+  tp-phpmyadmin:
+    from: phpmyadmin/phpmyadmin
+    container_name: tp-phpmyadmin
+    restart: always
+    environment:
+      PMA_HOST: tp-myslq
+    ports:
+      - 8080:80
+    networks:
+      - network-mysql-phpmyadmin-bridge
+  
+  networks:
+    network-mysql-phpmyadmin-bridge:
+      driver: bridge
