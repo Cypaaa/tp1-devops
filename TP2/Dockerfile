@@ -1,4 +1,4 @@
-FROM nginx:alpine:3.17
+FROM nginx:stable-alpine3.17-slim
 
 WORKDIR /usr/share/nginx
 
