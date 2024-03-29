@@ -19,8 +19,8 @@
 <br /><br />
 
 6.
-    - **a:** docker-compose.yaml: sert a gerer du multi conteneurs avec des connections entre eux
+    - **a:** docker-compose.yaml: sert a gerer du multi conteneurs avec des connections entre eux<br />
     docker run: sert a lancer un seul conteneu, plus adaptée pour une utilisation avec des conteneurs individuels
-    - **b:** lancer: `docker-compose up -d`
+    - **b:** lancer: `docker-compose up -d`<br />
     arreter: `docker-compose down`
     - **c:** dans docker-compose.yaml
