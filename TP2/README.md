@@ -16,3 +16,11 @@
     - **b:** docker build --tag nginx-web-truc .<br />
     docker run -p 8080:80 --detach 'nginx-web-truc'<br />
     - **c:** simple de fou et config bcp plus custom + plus lisible et facile a partager<br />
+<br /><br />
+
+6.
+    - **a:** docker-compose.yaml: sert a gerer du multi conteneurs avec des connections entre eux
+    docker run: sert a lancer un seul conteneu, plus adaptée pour une utilisation avec des conteneurs individuels
+    - **b:** lancer: `docker-compose up -d`
+    arreter: `docker-compose down`
+    - **c:** dans docker-compose.yaml
