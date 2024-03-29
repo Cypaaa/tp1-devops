@@ -6,9 +6,9 @@
     - **c:** # done<br />
     - **d:** docker run -it --rm -d -p 8080:80 --name web -v ./html:/usr/share/nginx/html nginx<br />
     la page par default est dans /usr/share/nginx/html
-    - e. docker stop web<br />
+    - **e:** docker stop web<br />
     docker rm web<br />
-    - f. docker cp ./html web:/usr/share/nginx/html
+    - **f:** docker cp ./html web:/usr/share/nginx/html
 <br /><br />
 
 4.
