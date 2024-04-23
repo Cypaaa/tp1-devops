@@ -1,0 +1,1 @@
+docker start tp3-container

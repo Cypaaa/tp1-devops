@@ -1,0 +1,14 @@
+{
+  "name": "tp3",
+  "version": "1.0.0",
+  "description": "serveur nodejs pour le tp3",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Y a pas de pano\""
+  },
+  "author": "Un Pano",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
