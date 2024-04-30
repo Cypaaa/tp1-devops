@@ -1,1 +1,1 @@
-docker start tp3-container
+sudo docker start tp3-container

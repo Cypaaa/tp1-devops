@@ -1,1 +1,1 @@
-docker run --name tp3-container -dp 127.0.0.1:3000:3000 tp3-cyprien
+sudo docker run --name tp3-container --network container:tp3-mysql-cyprien -dp 127.0.0.1:3000:3000 tp3-cyprien

@@ -1,1 +1,1 @@
-docker build -t tp3-cyprien .
+sudo docker build -t tp3-cyprien .
