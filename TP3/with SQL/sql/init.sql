@@ -1,5 +1,5 @@
-CREATE DATABASE restapitest123;
-use restapitest123;
+CREATE DATABASE IF NOT EXISTS restblog;
+use restblog;
 
 CREATE TABLE `programming_languages`
 (
@@ -18,7 +18,7 @@ engine = innodb charset=utf8mb4 COLLATE utf8mb4_general_ci;
 
 INSERT INTO programming_languages(id,name,released_year,githut_rank,pypl_rank,tiobe_rank) 
 VALUES 
-(1,'JavaScript',1995,1,3,7),
+(1,'Go',2009,1,13,14),
 (2,'Python',1991,2,1,3),
 (3,'Java',1995,3,2,2),
 (4,'TypeScript',2012,7,10,42),
@@ -31,6 +31,16 @@ VALUES
 (11,'Objective-C',1984,18,8,18),
 (12,'Swift',2015,16,9,13),
 (13,'Kotlin',2011,15,12,40),
-(14,'Go',2009,4,13,14),
+(14,'JavaScript',1995,4,3,7),
 (15,'Rust',2010,14,16,26),
 (16,'Scala',2004,11,17,34);
+
+
+DELIMITER //
+
+CREATE PROCEDURE restblog.sp_search_programming_languages_by_id (IN p_id INT)
+BEGIN
+    SELECT * FROM programming_languages WHERE id = p_id;
+END //
+
+DELIMITER ;

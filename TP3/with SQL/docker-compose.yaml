@@ -1,0 +1,27 @@
+# version: '3.8' <- deprecated
+
+services:
+  root.mysql.db:
+    image: mysql:latest
+    restart: always
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: restblog
+      MYSQL_DATABASE: restblog
+    networks:
+      - nodejs-mysql
+  
+  nodejs:
+    build: .
+    restart: always
+    ports:
+      - "3000:3000"
+    networks:
+      - nodejs-mysql
+    depends_on:
+      - root.mysql.db
+
+networks:
+  nodejs-mysql:
+    driver: bridge

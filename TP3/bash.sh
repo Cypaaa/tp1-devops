@@ -1,1 +1,0 @@
-sudo docker exec -it tp3-container bash
