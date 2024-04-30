@@ -9,5 +9,5 @@
 ### 2
 
 (HTTP)<br />
-Aller sur [localhost:3000/programming-languages/1](http://localhost:3000/programming-languages)<br />
+Aller sur [localhost:3000/programming-languages](http://localhost:3000/programming-languages)<br />
 Ou [localhost:3000/programming-languages/{id}](http://localhost:3000/programming-languages/1)
