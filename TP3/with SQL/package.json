@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "eslint": "^9.2.0",
+    "globals": "^15.1.0"
+  }
+}
