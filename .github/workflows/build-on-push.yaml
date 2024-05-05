@@ -1,0 +1,14 @@
+name: Run Docker Build
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run docker uild
+        working-directory: "./TP3/with SQL"
+        run: docker build .

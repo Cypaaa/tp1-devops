@@ -1,0 +1,17 @@
+name: Run Lint
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - name: Run Install + Linting
+        working-directory: "./TP3/with SQL"
+        run: npm i
+        run: ./node_modules/.bin/eslint .
+      
