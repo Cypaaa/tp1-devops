@@ -12,6 +12,7 @@ jobs:
       - uses: actions/setup-node@v4
       - name: Run Install + Linting
         working-directory: "./TP3/with SQL/srv"
-        run: npm i
-        run: ./node_modules/.bin/eslint .
+        run: |
+          npm i
+          ./node_modules/.bin/eslint .
       
