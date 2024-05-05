@@ -1,4 +1,4 @@
-name: Run tests
+name: Run Audit
 
 on:
   workflow_dispatch:
@@ -10,6 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-      - name: Run Tests
+      - name: Run NPM Audit
         working-directory: "./TP3/with SQL/srv"
-        run: npm run test
+        run: npm audit

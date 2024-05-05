@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Run docker uild
-        working-directory: "./TP3/with SQL"
+      - name: Run docker build
+        working-directory: "./TP3/with SQL""./TP3/with SQL"
         run: docker build .
