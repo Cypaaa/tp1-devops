@@ -14,7 +14,6 @@ jobs:
         working-directory: "./TP3/with SQL/srv"
         run: |
           npm i
-          cd ./node_modules/.bin
-          ls
-          ./node_modules/.bin/eslint .
+          npm i eslint -g
+          eslint .
       
