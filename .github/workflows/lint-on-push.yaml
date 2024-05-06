@@ -12,6 +12,7 @@ jobs:
       - uses: actions/setup-node@v4
       - name: Run Install + Linting
         working-directory: "./TP3/with SQL/srv"
+        # Install with -g so I can just write "eslint ."
         run: |
           npm i eslint -g
           npm i
